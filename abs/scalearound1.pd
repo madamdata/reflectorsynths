@@ -1,0 +1,12 @@
+#N canvas 457 256 1912 986 10;
+#X obj 124 65 inlet~;
+#X obj 219 67 inlet;
+#X obj 147 232 outlet~;
+#X text 224 50 deviation from 1;
+#X text 125 47 signal;
+#X obj 125 167 expr~ ($v1 * $v2) + 1;
+#X obj 232 121 sig~;
+#X connect 0 0 5 0;
+#X connect 1 0 6 0;
+#X connect 5 0 2 0;
+#X connect 6 0 5 1;
