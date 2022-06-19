@@ -1464,19 +1464,21 @@ cut 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X connect 35 0 36 0;
 #X connect 38 0 15 0;
 #X restore 489 516 pd lfosends;
-#X obj 393 338 vsl 25 100 0.01 100 1 0 \$0-lfofrqsnd \$0-lfofrqrcv
-lfo_freq 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 394 331 vsl 25 100 0.01 30 1 0 \$0-lfofrqsnd \$0-lfofrqrcv lfo_freq
+0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 432 362 vsl 25 125 0 100 0 0 \$0-lfoamtsnd \$0-lfoamtrcv lfo_amt
 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 318 448 hradio 25 1 0 4 \$0-lfoshapesnd \$0-lfoshapercv empty
+#X obj 318 458 hradio 25 1 0 4 \$0-lfoshapesnd \$0-lfoshapercv empty
 0 -8 0 10 #b4ecfc #fcb070 #000000 0;
-#X text 318 477 sn--sw--pl--tri;
+#X text 318 487 sn--sw--pl--tri;
 #X obj 354 323 vsl 20 85 0 1 0 0 \$0-lfopwsnd \$0-lfopwrcv lfo_pw 0
 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 394 439 5 0 0 0 - - - 0;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
 #X connect 32 0 1 0;
 #X connect 32 1 1 1;
 #X connect 32 2 1 2;
 #X connect 32 3 1 3;
+#X connect 33 0 38 0;
 #X coords 0 986 1 985 300 250 0;
